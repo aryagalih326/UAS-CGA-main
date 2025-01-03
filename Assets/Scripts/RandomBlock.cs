@@ -19,7 +19,7 @@ public class RandomBlock : MonoBehaviour{
 		{
 			xPos = Random.Range(9, 0);
 			zPos = Random.Range(1, 9);
-			Instantiate(theBlock, new Vector3(xPos, 0, zPos), Quaternion.identity);
+			Instantiate(theBlock, new Vector3(xPos, 0.5f, zPos), Quaternion.identity);
 			yield return new WaitForSeconds(0.1f);
 			BlockCount +=1;
 		}
